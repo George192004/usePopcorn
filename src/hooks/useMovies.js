@@ -28,7 +28,6 @@ export function useMovies(query) {
           setError("");
         } catch (err) {
           if (err.name !== "AbortError") {
-            console.log(err.message);
             setError(err.message);
           }
         } finally {
