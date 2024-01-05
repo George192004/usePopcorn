@@ -50,11 +50,25 @@ body {
 }
 
 .box {
-  width: 42rem;
-  max-width: 42rem;
+  width: 50rem;
+  max-width: 50rem;
   background-color: var(--color-background-500);
   border-radius: 0.9rem;
   position: relative;
+  overflow-y: scroll;
+}
+
+.box::-webkit-scrollbar {
+  width: 12px;
+}
+
+.box::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 6px;
+}
+
+.box::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
 }
 
 .loader {
